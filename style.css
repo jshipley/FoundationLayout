@@ -13,6 +13,8 @@ body {
     flex-direction: column;
     width: 80%;
     min-height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
     /* align-items: center; */
 }
 
@@ -32,8 +34,8 @@ header nav {
     margin-left: auto;
 }
 
-header, main section, footer {
-    padding: 0 15%;
+header, section, footer {
+    padding: 32px 15%;
 }
 
 header {
@@ -62,7 +64,7 @@ footer {
 .hero h1 {
     color: #f9faf8;
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 600;
     margin-top: 0;
 }
 
@@ -94,4 +96,39 @@ button.action {
     border-width: 0;
     border-radius: 8px;
     
+}
+
+.info {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2 {
+    font-size:  36px;
+    font-weight: 600;
+}
+
+.deck {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .image {
+    display: inline-block;
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: #3882f6;
+    border-radius: 12px;
+    width: 160px;
+    height: 160px;
 }
